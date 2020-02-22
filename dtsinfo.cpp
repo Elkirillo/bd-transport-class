@@ -128,11 +128,6 @@ class tractor : public DTS {
 		}
 		~tractor () override {}
 };
-//функция вывода на экран версии программы
-void version ()
-{
-	cout << "c++ standard 11\n:";
-}
 //организация логотипа для bash систем
 char* logotip="\x1b[0;43m                                                             \x1b[0m\n"
 	 		  "\x1b[0;45m                                                             \x1b[0m\n"
@@ -142,7 +137,6 @@ int main (int argc, char** argv)
 	//создание массива объектов класса "транспорт"
 	DTS* arr[4]={new passBus(), new repairBus(), new miniBus(), new tractor()};
 	cout << logotip;
-	version ();
 	//ввод информации о транспорте
 	arr[0]->filling();
 	arr[1]->filling();
