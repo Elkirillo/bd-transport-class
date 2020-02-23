@@ -62,7 +62,6 @@ void repairBus::Getinfo()
 	cout << "Numb of repairBus: " << number << endl;
 	cout << "Brand of repairBus: " << brand << endl;
 }
-
 repairBus::~repairBus(){}
 
 miniBus::miniBus(): DTS (){}
@@ -85,12 +84,10 @@ void miniBus::filling()
 	cout<< "Enter brand of minibus: " << endl;
 	cin >> brand;
 }
-
 void miniBus::Getinfo()
 {
 	cout << "Numb of miniBus: " << number << endl;
 	cout << "Brand of miniBus: " << brand << endl;
-
 }
 miniBus::~miniBus(){}
 
