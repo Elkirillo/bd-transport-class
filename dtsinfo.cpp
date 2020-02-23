@@ -8,6 +8,7 @@ int main (int argc, char** argv)
 	{
 		arr[i]->filling();
 	}
+	system("cls");
 	//вывод информации
 	for (int i=0;i<4;i++)
 	{
