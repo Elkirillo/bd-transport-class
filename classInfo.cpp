@@ -33,7 +33,12 @@ void passBus::filling()
 	cout<< "Enter brand of passanger bus: " << endl;
 	cin >> brand;
 }
-
+//метод вывода информации о данном транспорте
+void passBus::Getinfo()
+{
+	cout << "Numb of passBus: " << number << endl;
+	cout << "Brand of passBus: " << brand << endl;
+}
 passBus::~passBus(){}
 
 repairBus::repairBus() : DTS (){}
@@ -57,6 +62,12 @@ void repairBus::filling()
 	}
 	cout<< "Enter brand of repair Bus: " << endl;
 	cin >> brand;
+}
+//метод вывода информации о данном транспорте
+void repairBus::Getinfo()
+{
+	cout << "Numb of repairBus: " << number << endl;
+	cout << "Brand of repairBus: " << brand << endl;
 }
 
 repairBus::~repairBus(){}
@@ -82,6 +93,12 @@ void miniBus::filling()
 	cin >> brand;
 }
 
+void miniBus::Getinfo()
+{
+	cout << "Numb of miniBus: " << number << endl;
+	cout << "Brand of miniBus: " << brand << endl;
+
+}
 miniBus::~miniBus(){}
 
 tractor::tractor() : DTS (){}
@@ -104,5 +121,10 @@ void tractor::filling ()
 	cout<< "Enter brand of tractor: " << endl;
 	cin >> brand;
 }
-
+//метод вывода информации о данном транспорте
+void tractor::Getinfo()
+{
+	cout << "Numb of tractor: " << number << endl;
+	cout << "Brand of tractor: " << brand << endl;
+}
 tractor::~tractor() {}
