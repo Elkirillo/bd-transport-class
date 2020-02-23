@@ -1,10 +1,6 @@
 #include "classInfo.h"
 
-DTS::DTS() 
-{
- 	number=0;
-	brand="";
-}
+DTS::DTS() : number(0), brand(""){}
 //метод заполнения информацией об данном транспорте
 void DTS::Getinfo() 
 {
