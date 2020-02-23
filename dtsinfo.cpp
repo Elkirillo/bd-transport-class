@@ -4,16 +4,15 @@ int main (int argc, char** argv)
 {
 	DTS* arr[4]={new passBus(), new repairBus(), new miniBus(), new tractor()};
 	//заполнение информацией
-	arr[0]->filling();
-	arr[1]->filling();
-	arr[2]->filling();
-	arr[3]->filling();
+	for (int i=0;i<4;i++)
+	{
+		arr[i]->filling();
+	}
 	//вывод информации
-	arr[0]->Getinfo();
-	arr[1]->Getinfo();
-	arr[2]->Getinfo();
-	arr[3]->Getinfo();
-	
+	for (int i=0;i<4;i++)
+	{
+		arr[i]->Getinfo();
+	}
 	delete [] arr;
 	return 0;
 }
