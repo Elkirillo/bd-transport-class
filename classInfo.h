@@ -11,8 +11,8 @@ class DTS
 		DTS ();
 		//виртуальный метод, который реализует интерфейс заполнения данными
 		virtual void filling() =0 ;
-        	//метод, который выводит информацию об требуемом транспорте
-		void Getinfo();
+        	//виртуальный метод, который выводит информацию об требуемом транспорте
+		virtual void Getinfo() = 0;
 		virtual ~DTS ();
 	protected:
 		int number;
@@ -26,6 +26,8 @@ class passBus : public DTS
 		passBus ();
 		//метод заполнения информацией об данном транспорте
 		void filling () override;
+		//метод, который выводит информацию о транспорте
+		void Getinfo() override;
 		~passBus () override;
 	
 };
@@ -36,6 +38,8 @@ class repairBus : public DTS
 		repairBus ();
 		//метод заполнения информацией об данном транспорте
 		void filling () override;
+		//метод, который выводит информацию о транспорте
+		void Getinfo() override;
 		~repairBus () override;
 };
 //класс, производный от базового класса, "микро-автобус"
@@ -45,7 +49,9 @@ class miniBus : public DTS
 		miniBus ();
 		//метод заполнения информацией об данном транспорте
 		void filling () override;
-	~miniBus () override;
+		//метод, который выводит информацию о транспорте
+		void Getinfo() override;
+		~miniBus () override;
 };
 //класс, производный от базового класса, "трактор"
 class tractor : public DTS 
@@ -54,6 +60,8 @@ class tractor : public DTS
 		tractor ();
 		//метод заполнения информацией об данном транспорте
 		void filling () override;
+		//метод, который выводит информацию о транспорте
+		void Getinfo() override;
 		~tractor () override;
 	
 };
