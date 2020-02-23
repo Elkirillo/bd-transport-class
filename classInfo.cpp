@@ -1,13 +1,6 @@
 #include "classInfo.h"
 
 DTS::DTS() : number(0), brand(""){}
-//метод заполнения информацией об данном транспорте
-void DTS::Getinfo() 
-{
-	cout << "Numb of DTS: " << number << endl;
-	cout << "Brand of DTS: " << brand << endl;
-}
-
 DTS::~DTS() {}
 
 passBus::passBus() : DTS (){}
