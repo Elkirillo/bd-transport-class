@@ -1,9 +1,9 @@
 #include "classInfo.h"
 
-DTS::DTS() : number(0), brand(""){}
+DTS::DTS() : number(0), brand("") {}
 DTS::~DTS() {}
 
-passBus::passBus() : DTS (){}
+passBus::passBus() : DTS() {}
 //метод заполнения информацией об данном транспорте
 void passBus::filling() 
 {
@@ -32,9 +32,9 @@ void passBus::Getinfo()
 	cout << "Numb of passBus: " << number << endl;
 	cout << "Brand of passBus: " << brand << endl;
 }
-passBus::~passBus(){}
+passBus::~passBus() {}
 
-repairBus::repairBus() : DTS (){}
+repairBus::repairBus() : DTS() {}
 //метод заполнения информацией об данном транспорте
 void repairBus::filling() 
 {
@@ -62,9 +62,9 @@ void repairBus::Getinfo()
 	cout << "Numb of repairBus: " << number << endl;
 	cout << "Brand of repairBus: " << brand << endl;
 }
-repairBus::~repairBus(){}
+repairBus::~repairBus() {}
 
-miniBus::miniBus(): DTS (){}
+miniBus::miniBus(): DTS() {}
 //метод заполнения информацией об данном транспорте
 void miniBus::filling() 
 {
@@ -89,11 +89,11 @@ void miniBus::Getinfo()
 	cout << "Numb of miniBus: " << number << endl;
 	cout << "Brand of miniBus: " << brand << endl;
 }
-miniBus::~miniBus(){}
+miniBus::~miniBus() {}
 
-tractor::tractor() : DTS (){}
+tractor::tractor() : DTS() {}
 //метод заполнения информацией об данном транспорте
-void tractor::filling () 
+void tractor::filling() 
 {
 	cout<< "Enter number of tractor: " << endl;
 	while (true)
