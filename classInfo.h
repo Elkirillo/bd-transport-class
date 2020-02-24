@@ -10,7 +10,7 @@ class DTS
 public: 
 	DTS ();
 	//виртуальный метод, который реализует интерфейс заполнения данными
-	virtual void filling() =0 ;
+	virtual void filling() = 0 ;
         //виртуальный метод, который выводит информацию об требуемом транспорте
 	virtual void Getinfo() = 0;
 	virtual ~DTS ();
